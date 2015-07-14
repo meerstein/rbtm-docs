@@ -11,6 +11,7 @@ Contents:
 .. toctree::
    :maxdepth: 2
 
+   introduction
    tango-client
    module-experiment
    module-storage
