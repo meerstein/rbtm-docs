@@ -16,7 +16,6 @@ Contents:
    module-experiment
    module-storage
    web-interface
-   page-experiment
    
 Indices and tables
 ==================
