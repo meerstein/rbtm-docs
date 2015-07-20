@@ -16,6 +16,7 @@ Linux
 
 .. code-block:: bash
 
+    sudo apt-get install libboost-dev libboost-python-dev libtango8-dev
     pip install pytango --egg
 
 Второй способ (быстрее, но более ранняя версия PyTango)
