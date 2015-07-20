@@ -1,1 +1,1 @@
-# robotom_mipt
+# rbtm-docs
