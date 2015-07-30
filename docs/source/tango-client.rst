@@ -37,6 +37,7 @@ Windows
 
 
 Подключение к томографу
+~~~~~~~~~~~~~~~~~~~~~~~
 
 .. code-block:: python
 
@@ -304,10 +305,10 @@ PyTango.DevState.OFF
     tomograph.xraysource_voltage = 40
     tomograph.xraysource_current = 20
     tomograph.PowerOn()
-    tomograph.OpenShutter()
+    tomograph.OpenShutter(0)
     tomograph.GetFrame(1000)
     # detector.image
-    tomograph.CloseShutter()
+    tomograph.CloseShutter(0)
     tomograph.PowerOff()
 
 
