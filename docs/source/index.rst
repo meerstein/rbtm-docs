@@ -3,10 +3,10 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to rbtm's documentation!
-================================
+Добро пожаловать на страницу документации проекта ROBOTOM!
+==========================================================
 
-Contents:
+Оглавление:
 
 .. toctree::
    :maxdepth: 2
@@ -17,10 +17,16 @@ Contents:
    module-storage
    web-interface
    
-Indices and tables
-==================
+Указатели
+=========
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
 
+..
+   Символы в порядке приоритета, которые надо использовать для заголовков:
+   =====
+   ~~~~~
+   -----
+   ^^^^^

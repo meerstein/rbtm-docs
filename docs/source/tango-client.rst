@@ -43,7 +43,7 @@ Windows
 
     tomograph = PyTango.DeviceProxy('188.166.73.250:10000/tomo/tomograph/1')
 
-или прописать в ``~/.bashrc`` (Linux)
+или прописать в :file:`~/.bashrc` (Linux)
 
 .. code-block:: bash
     
@@ -76,19 +76,19 @@ Windows
 
 .. attribute:: angle_position
 
-   Угод поворота двигателя в градусах.
+   Угод поворота двигателя в градусах
 
    :type: float
 
 .. attribute:: horizontal_position
 
-   Положение двигателя по горизонтали.
+   Положение двигателя по горизонтали
 
    :type: int
 
 .. attribute:: vertical_position
 
-   Положение двигателя по вертикали.
+   Положение двигателя по вертикали
 
    :type: int
 
@@ -106,7 +106,7 @@ Windows
 
 .. function:: ResetAnglePosition()
 
-   Делает текущий угол поворота новым нулем.
+   Делает текущий угол поворота новым нулем
 
 .. function:: MotorStatus()
 
@@ -206,13 +206,12 @@ Windows
 Детектор
 ~~~~~~~~
 
-Команды
--------
-
+Атрибуты
+--------
 
 .. attribute:: image
 
-   После вызова :any:`GetFrame()` здесь лежит полученное изображение.
+   После вызова :py:func:`GetFrame()` здесь лежит полученное изображение
 
    .. warning::
 
@@ -221,9 +220,12 @@ Windows
    :type: PyTango.EncodedAttribute
 
 
+Команды
+-------
+
 .. function:: GetFrame(exposure)
 
-   Получает изображение с детектора. Возвращает метаданные изображения. Само изображение лежит в атрибуте :any:`image`.
+   Получает изображение с детектора. Возвращает метаданные изображения. Само изображение лежит в атрибуте :py:attr:`image`.
 
    :param exposure: Время экспозиции в 0,1 миллисекунд. 1 <= exposure (0,1 ms) <= 160000, т. е. от 0,1 миллисекунды до 16 секунд.
    :type exposure: int
@@ -276,7 +278,7 @@ Windows
 
 
 Состояния
----------
+~~~~~~~~~
 
 PyTango.DevState.OPEN
 
@@ -333,4 +335,3 @@ PyTango.DevState.OFF
     motor.angle_position # 1.0
     motor.ResetAnglePosition()
     motor.angle_position # 0.0
-
